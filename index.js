@@ -1,7 +1,7 @@
 const express = require('express');
 const conectarDB = require('./config/db');
 // importar cors
-const cors = require('cors');
+//const cors = require('cors');
 
 
 //Crear el servidor
@@ -11,7 +11,7 @@ const app = express();
 conectarDB();
 
 // Habilitar cors
-app.use(cors());
+//app.use(cors());
 
 // Habilitar express.json | Nota: Tambne se usa aca bodyparser
 app.use(express.json({ extended: true }))
