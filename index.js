@@ -19,7 +19,7 @@ app.use(express.json({ extended: true }))
 
 
 // Puero del App | heroku asigna el puerto, en caso de no conseguir asigna el 4000
-const port = process.env.port || 4000;
+const port = process.env.port || 4300;
 
 // Definir la pagina principal
 /*app.get('/', (req, res)=>{
