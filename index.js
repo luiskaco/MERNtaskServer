@@ -19,7 +19,7 @@ app.use(express.json({ extended: true }))
 
 
 // Puero del App | heroku asigna el puerto, en caso de no conseguir asigna el 4000
-const PORT = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 // Definir la pagina principal
 /*app.get('/', (req, res)=>{
@@ -37,10 +37,9 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/tareas', require('./routes/tasks'));
 
 
-
-
 //arrancar el servidor
-app.listen(PORT, () =>{
+app.listen(port,'0.0.0.0', () =>{
     console.log(`El servidor esta funcionando en el puerto ${PORT}`);
 })
 
+//Lo asigna heroku '0.0.0.0.

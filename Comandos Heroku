@@ -1,0 +1,11 @@
+| Loguear CLI (Descarga cliente)
+heroku login
+
+| Crear proytecto
+heroku create --remote production
+
+| integracion continua 
+git push production master
+
+| Proyecto Setting (Config Vars)
+Para las variables de entorno
