@@ -1,0 +1,41 @@
+
+//Iniciar un packac
+npm init | Creamos el archivos package.json
+
+//Configurar un servidor
+
+   |Dependencia de Desarrollo
+       npm i -D nodemon (Reiniciar el servidor)
+
+   |Dependencias
+       npm i express mongoose dotenv
+       
+       express: (SERVIDOR)
+       mongoose: (CONSULTAS DE BD)
+       dotenv: (CREAR ARCHIVOS CON VARIBLES DE ENTORNO)
+
+    |HASHear password
+        npm i bcryptjs
+
+    | PARA LAS VALIDACIONES
+    npm i express-validator
+
+    | HWT = JSON WEB TOKEN compartir informacion entre aplicaciones web. se verifica la autencidad el json
+
+    HEADER - tipo de jwt y el algoritmo
+    PAYLOAD - Informacion de la entidad y datos adicionales
+    SIGNATURE - Verifica que el mensaje no ha sido cambiado
+
+    | jwt 
+    npm i jsonwebtoken
+
+    Nota: Debe crearse una variable en el archivo de ENV 
+    con una palabra reservada
+
+    | CORS - para permitir cambios de recursos entre dominio
+    npm i cors
+
+    | Eliminar paquetes
+    npm uninstall --save uuid
+
+    
